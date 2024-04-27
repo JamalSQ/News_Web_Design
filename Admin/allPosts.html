@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+  <!-- header and sidebar start -->
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="bg-light mb-2 col-md-12 py-2">
+        <a class="navbar-brand fw-bold text-dark" href="#">
+          <h2>B.B.C News</h2>
+        </a>
+      </nav>
+    </div>
+    <div class="row">
+      <div class="sidebar col-md-2">
+        <div class="user-details">
+          <img src="../images/turtule.jpg" class="profile-pic mb-1" alt="Profile Picture">
+          <h4>User Name</h4>
+          <p>User Role</p>
+        </div>
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" href="profile.html">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="WriteBlog.html">Write Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="allPosts.html">All Post</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="changePassword.html">Change Passwod</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Logout</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Main start -->
+      <div class="col-md-10">
+        <!-- Dashboard content -->
+        <div class="postheading">
+          <div class="row d-flex justify-content-between">
+            <div class="col-md-4">
+              <h2 class="mb-4 text-center">All Blog Posts</h2>
+            </div>
+            <div class="col-md-4">
+              <input type="search" placeholder="search" class="form-control">
+            </div>
+          </div>
+        </div>
+
+        <!-- Blog Posts Table -->
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Sr.No</th>
+              <th>Image</th>
+              <th>Title</th>
+              <th>Description</th>
+              <th>Status</th> <!-- Empty header for Edit button column -->
+              <th>Edit</th> <!-- Empty header for Edit button column -->
+              <th>Delete</th> <!-- Empty header for Delete button column -->
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td><img src="../images/1.jpg" alt="Post Image" class="img-thumbnail" style="max-width: 100px;"></td>
+              <td>Blog Post Title 1</td>
+              <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.</td>
+              <td><i class="fas fa-edit">Pending</i></td>
+              <td><a href="#" class="btn btn-primary"><i class="fas fa-edit"></i> Edit</a></td>
+              <td><a href="#" class="btn btn-danger"><i class="fas fa-trash-alt"></i> Delete</a></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td><img src="../images/2.jpg" alt="Post Image" class="img-thumbnail" style="max-width: 100px;"></td>
+              <td class="">Pending</td>
+              <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.</td>
+              <td><i class="fas fa-edit">Pending</i></td>
+              <td><a href="#" class="btn btn-primary"><i class="fas fa-edit"></i> Edit</a></td>
+              <td><a href="#" class="btn btn-danger"><i class="fas fa-trash-alt"></i> Delete</a></td>
+            </tr>
+            <!-- Add more rows for additional blog posts -->
+          </tbody>
+
+        </table>
+        <ul class="pagination">
+          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+      </div>
+      <!-- Main End -->
+
+
+    </div>
+  </div>
+  <!-- header and sidebar End -->
+</body>
+
+</html>

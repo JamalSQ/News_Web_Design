@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!-- header and sidebar start -->
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="bg-light mb-2 col-md-12 py-2">
+        <a class="navbar-brand fw-bold text-dark" href="#"><h2>B.B.C News</h2></a>
+      </nav>
+    </div>
+    <div class="row">
+      <div class="sidebar col-md-2">
+        <div class="user-details">
+          <img src="../images/turtule.jpg" class="profile-pic mb-1" alt="Profile Picture">
+          <h4>Admin Name</h4>
+          <p>ROLE: Admin</p>
+        </div>
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" href="profile.html">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="WriteBlog.html">New Post</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="allPosts.html">All Post</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="changePassword.html">Change Passwod</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Logout</a>
+          </li>
+        </ul>
+      </div>
+
+      
+      <div class="col-md-10">
+        <!-- Dashboard content -->
+        <div class="container">
+          <h2>Dashboard</h2>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Total Posts</h5>
+                  <p class="card-text">There are 1000 Posts</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Recent Posts</h5>
+                  <p class="card-text">You have recently 2 News posted.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Panding Posts</h5>
+                  <p class="card-text">10 News Posts are Pending</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Dashboard content -->
+      </div>
+    </div>
+  </div>
+  <!-- header and sidebar End -->
+</body>
+</html>
